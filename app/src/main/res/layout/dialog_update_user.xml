@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/dialogUpdateUserFirstName"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:drawablePadding="15dp"
+        android:elevation="2sp"
+        android:ems="10"
+        android:hint="First Name:"
+
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/dialogUpdateUserLastName"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="15dp"
+
+        android:drawablePadding="15dp"
+        android:elevation="2sp"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/dialogUpdateUserFirstName"
+        app:layout_constraintStart_toStartOf="@+id/dialogUpdateUserFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/dialogUpdateUserFirstName" />
+
+    <EditText
+        android:id="@+id/dialogUpdateUserAge"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="15dp"
+
+        android:drawablePadding="15dp"
+        android:elevation="2sp"
+        android:ems="10"
+        android:hint="Age"
+
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/dialogUpdateUserLastName"
+        app:layout_constraintStart_toStartOf="@+id/dialogUpdateUserLastName"
+        app:layout_constraintTop_toBottomOf="@+id/dialogUpdateUserLastName"
+        tools:ignore="MissingPrefix" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/UpdateUser"
+        android:layout_width="157dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="15dp"
+
+        android:text="Update User"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogUpdateUserAge" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
